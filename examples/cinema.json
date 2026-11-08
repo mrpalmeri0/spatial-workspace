@@ -1,0 +1,19 @@
+{
+  "scale": 1.0,
+  "distance": 3.0,
+  "spacingDegrees": 40.0,
+  "yawAxis": 1,
+  "direction": 1.0,
+  "captureFPS": 30,
+  "renderFPS": 60,
+  "useGPUTextures": true,
+  "adaptiveBias": true,
+  "automaticRecovery": true,
+  "showTestWindows": true,
+  "screenCount": 1,
+  "headTracking": false,
+  "background": 3,
+  "backgroundImagePath": "",
+  "brightness": 1.0,
+  "tilt": 0.0
+}
