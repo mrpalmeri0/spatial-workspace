@@ -19,21 +19,24 @@ mkdir -p "$task_app/Contents/MacOS" "$task_app/Contents/Resources"
 xcrun swiftc -sdk "$task_sdk_path" -module-cache-path /private/tmp/rayneo-swift-cache -import-objc-header Sources/VirtualDisplayBridge.h -target arm64-apple-macos26.0 -O Sources/*.swift Shared/*.swift -o "$task_build_dir/WorkspaceDemo"
 cp "$task_build_dir/WorkspaceDemo" "$task_app/Contents/MacOS/RayNeoWorkspace"
 cp Assets/AppIcon.icns "$task_app/Contents/Resources/AppIcon.icns"
+cp -R Resources/*.lproj "$task_app/Contents/Resources/"
 cat > "$task_app/Contents/Info.plist" <<'PLIST'
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
 <key>CFBundleExecutable</key><string>RayNeoWorkspace</string>
 <key>CFBundleIdentifier</key><string>local.rayneo.workspace.dev</string>
-<key>CFBundleName</key><string>RayNeo Workspace Dev</string>
-<key>CFBundleDisplayName</key><string>RayNeo Workspace Dev</string>
+<key>CFBundleName</key><string>Spatial Workspace Dev</string>
+<key>CFBundleDisplayName</key><string>Spatial Workspace Dev</string>
 <key>CFBundlePackageType</key><string>APPL</string>
 <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
 <key>CFBundleShortVersionString</key><string>0.11.0</string>
-<key>CFBundleVersion</key><string>4</string>
+<key>CFBundleVersion</key><string>5</string>
 <key>LSMinimumSystemVersion</key><string>26.0</string>
 <key>CFBundleIconFile</key><string>AppIcon</string>
-<key>NSLocalNetworkUsageDescription</key><string>Collega iPhone al Mac per la sessione RayNeo remota.</string>
+<key>NSLocalNetworkUsageDescription</key><string>Connect iPhone to your Mac for a remote desktop session.</string>
+<key>CFBundleDevelopmentRegion</key><string>en</string>
+<key>CFBundleLocalizations</key><array><string>en</string><string>it</string></array>
 <key>NSHighResolutionCapable</key><true/>
 </dict></plist>
 PLIST

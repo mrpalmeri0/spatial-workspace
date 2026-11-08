@@ -1,7 +1,9 @@
-# Source provenance and licensing status
+# Component notices
 
-This project includes code from [poppinyunhai/rayneo-gt-mac-workspace](https://github.com/poppinyunhai/rayneo-gt-mac-workspace). The local baseline references commit `43ed410`; later local development includes the native 0.11.0 Mac/iPhone work and release tooling. The current project is being prepared as an independent repository.
+[Italiano](NOTICE.it.md)
 
-No LICENSE file or explicit redistribution license was found in the available baseline tree during this preparation. A public repository alone does not establish a license grant. No MIT, Apache or other blanket license has been added to code whose licensing has not been established. Preserve existing notices. Before publishing inherited code under a chosen license or distributing binaries, establish the applicable permissions with the original rights holder and record them here. This note does not grant rights.
+Spatial Workspace contains pre-existing virtual-display and GT tracking components, including contributions credited to poppinyunhai, alongside the current native UI, tools and companion development. Public-facing documentation describes the current project.
 
-RayNeo and Apple product names identify compatibility. This community project is not affiliated with or endorsed by those companies.
+No explicit redistribution license was present in the available inherited source tree. No blanket MIT/Apache license has been added. Preserve existing component copyright/license notices and establish the applicable rights before relicensing or redistributing inherited components. This notice grants no rights.
+
+RayNeo, XREAL, VITURE, Rokid and Apple names identify products or compatibility limits; they imply no affiliation or endorsement.
