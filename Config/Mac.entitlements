@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Entitlements per la distribuzione diretta (Developer ID + notarizzazione).
+  L'app NON è in sandbox: ScreenCaptureKit, Accessibilità e IOKit/HID verso
+  gli occhiali sono regolati dai permessi TCC (richiesti a runtime), non da
+  entitlements, quindi qui non servono eccezioni.
+  Lasciare vuoto è corretto e preferibile: ogni entitlement in più è una
+  "apertura" che la notarizzazione e la review valutano con più attenzione.
+  Aggiungere una chiave qui SOLO se un errore di runtime lo richiede
+  esplicitamente (es. com.apple.security.cs.disable-library-validation per
+  caricare librerie di terzi non firmate da te).
+-->
+<plist version="1.0">
+<dict>
+</dict>
+</plist>
